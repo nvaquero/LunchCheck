@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="LunchCheckApp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lunch Check</title>
+</head>
+<body>
+
+  <div ng-controller="LunchCheckController">
+    <h1>Lunch Checker</h1>
+    <p>Ingresa los items de tu comida (separados por comas):</p>
+
+    <!-- Cuadro de texto para ingresar los ítems -->
+    <input type="text" ng-model="lunchItems">
+
+    <!-- Botón para verificar el almuerzo -->
+    <button ng-click="checkLunch()">Check</button>
+
+    <!-- Mostrar mensaje -->
+    <h2>{{ message }}</h2>
+  </div>
+
+  <!-- Incluir AngularJS desde CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+
+  <!-- Enlace al archivo app.js -->
+  <script src="app.js"></script>
+
+</body>
+</html>
